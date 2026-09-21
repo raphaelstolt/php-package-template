@@ -1,6 +1,7 @@
 {
     "name": "vendor-name/package-name",
     "description": "Package description.",
+    "keywords": ["keyword", "keyword-n"],
     "type": "library",
     "license": "MIT",
     "autoload": {
