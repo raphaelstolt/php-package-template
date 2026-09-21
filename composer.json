@@ -33,7 +33,8 @@
     "require-dev": {
         "carthage-software/mago": "^1.49",
         "phpunit/phpunit": "^11.5 || ^12.5 || ^13.3",
-        "stolt/lean-package-validator": "^6.0"
+        "stolt/lean-package-validator": "^6.0",
+        "stolt/version-aligner": "^1.0"
     },
     "scripts": {
         "test": "phpunit",
@@ -44,8 +45,10 @@
         "cs-fix": "mago format",
         "validate-gitattributes": "./vendor/bin/lean-package-validator validate",
         "validate-package": "composer validate --strict",
+        "version-check": "version-aligner check",
         "pre-commit-check": [
             "@validate-gitattributes",
+            "@version-check",
             "@cs-lint",
             "@test"
         ]
