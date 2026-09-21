@@ -1,0 +1,52 @@
+{
+    "name": "vendor-name/package-name",
+    "description": "Package description.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "VendorName\\PackageName\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "VendorName\\PackageName\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "carthage-software/mago": true
+        }
+    },
+    "require-dev": {
+        "carthage-software/mago": "^1.49",
+        "phpunit/phpunit": "^13.3",
+        "stolt/lean-package-validator": "^6.0"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs-lint": [
+            "mago format --check",
+            "mago lint"
+        ],
+        "cs-fix": "mago format",
+        "validate-gitattributes": "./vendor/bin/lean-package-validator validate",
+        "pre-commit-check": [
+            "@validate-gitattributes",
+            "@cs-lint",
+            "@test"
+        ]
+    }
+}
