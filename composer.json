@@ -32,7 +32,7 @@
     },
     "require-dev": {
         "carthage-software/mago": "^1.49",
-        "phpunit/phpunit": "^13.3",
+        "phpunit/phpunit": "^11.5 || ^12.5 || ^13.3",
         "stolt/lean-package-validator": "^6.0"
     },
     "scripts": {
