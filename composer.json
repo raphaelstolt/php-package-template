@@ -43,6 +43,7 @@
         ],
         "cs-fix": "mago format",
         "validate-gitattributes": "./vendor/bin/lean-package-validator validate",
+        "validate-package": "composer validate --strict",
         "pre-commit-check": [
             "@validate-gitattributes",
             "@cs-lint",
