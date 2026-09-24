@@ -37,6 +37,9 @@
         "stolt/lean-package-validator": "^6.0",
         "stolt/version-aligner": "^1.0"
     },
+    "suggest": {
+        "stolt/php-package-ai-skill": "Enables the acceleration of package development by leveraging AI capabilities."
+    },
     "scripts": {
         "test": "phpunit",
         "cs-lint": [
