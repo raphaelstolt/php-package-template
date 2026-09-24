@@ -1,6 +1,6 @@
 # package-name
 
-![Test Status](https://github.com/vendor-name/package-name/workflows/test/badge.svg)
+![Test Status](https://github.com/github-username/package-name/workflows/test/badge.svg)
 [![Version](http://img.shields.io/packagist/v/vendor-name/package-name.svg?style=flat)](https://packagist.org/packages/vendor-name/package-name)
 ![Downloads](https://img.shields.io/packagist/dt/vendor-name/package-name)
 ![PHP Version](https://img.shields.io/badge/php-8.2+-ff69b4.svg)
