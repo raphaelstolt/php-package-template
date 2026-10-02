@@ -12,6 +12,7 @@ new repository:
 git clone https://github.com/raphaelstolt/php-package-template.git package-name
 cd package-name
 rm -rf .git
+rm DEVELOPMENT.md
 git init -b main
 ```
 
