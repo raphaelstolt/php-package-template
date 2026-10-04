@@ -33,6 +33,7 @@
     },
     "require-dev": {
         "carthage-software/mago": "^1.49",
+        "myopensoft/php-version-bumper": "^1.1",
         "phpunit/phpunit": "^11.5 || ^12.5 || ^13.3",
         "stolt/lean-package-validator": "^6.0",
         "stolt/version-aligner": "^1.0"
