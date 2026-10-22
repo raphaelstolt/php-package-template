@@ -32,6 +32,7 @@
         }
     },
     "require-dev": {
+        "captainhook/captainhook": "^5.29",
         "carthage-software/mago": "^1.49",
         "myopensoft/php-version-bumper": "^1.1",
         "phpunit/phpunit": "^11.5 || ^12.5 || ^13.3",
