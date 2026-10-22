@@ -101,3 +101,31 @@ it according to your release strategy:
 
 For a complete list of configuration options, refer to the
 [`php-version-bumper` documentation](https://github.com/myopensoft/php-version-bumper).
+
+## Git Hooks
+
+This template uses [CaptainHook](https://github.com/captainhook-git/captainhook) to manage Git hooks for automated checks during development.
+
+After installing the development dependencies, activate the configured Git hooks:
+
+```bash
+composer install
+vendor/bin/captainhook install
+```
+
+The hooks are installed locally in `.git/hooks/` and run automatically when their corresponding Git events occur.
+
+See the [CaptainHook documentation](https://php.captainhook.info/) for configuration and customization options.
+
+## Conventional Commits
+
+This template uses [ramsey/conventional-commits](https://github.com/ramsey/conventional-commits) to validate commit
+messages against the Conventional Commits specification.
+
+The commit message rules are defined in `conventional-commits.json`, with the configuration being referenced from
+`composer.json`.
+
+Customize the allowed commit types, scope requirements, description formatting, and other rules in
+`conventional-commits.json`.
+
+The configuration is enforced through the CaptainHook `commit-msg` hook. See the [ramsey/conventional-commits documentation](https://github.com/ramsey/conventional-commits#configuration) for available options.
